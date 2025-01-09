@@ -1,15 +1,25 @@
 package com.assignment.demoAssignment.model;
 
 public class Employee {
-    private String name;
-    private int age;
-    private String position;
 
-    // Constructors, Getters, and Setters
-    public Employee(String name, int age, String position) {
+    private String id;
+    private String name;
+    private String department;
+
+    public Employee() {}
+
+    public Employee(String id, String name, String department) {
+        this.id = id;
         this.name = name;
-        this.age = age;
-        this.position = position;
+        this.department = department;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -20,19 +30,12 @@ public class Employee {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getPosition() {
-        return position;
-    }
-
-    public void setPosition(String position) {
-        this.position = position;
+    public void setDepartment(String department) {
+        this.department = department;
     }
 }
+

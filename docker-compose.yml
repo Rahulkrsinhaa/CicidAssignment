@@ -1,0 +1,13 @@
+version: '2.4'
+
+services:
+  springboot-app:
+    build:
+      context: . # Use the current directory as the build context
+      dockerfile: Dockerfile # Specify the Dockerfile
+    ports:
+      - "8080:8080" # Map the container's port 8080 to the host's port 8080
+    container_name: springboot-app-container
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod # Optional: Set Spring profiles if applicable
+    restart: always # Automatically restart the container if it crashes
