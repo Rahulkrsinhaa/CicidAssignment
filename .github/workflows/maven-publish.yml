@@ -4,10 +4,10 @@ name: Docker Build and Test
 on:
   push:
     branches:
-      - main
+      - fature_employee
   pull_request:
     branches:
-      - main
+      - fature_employee
 
 jobs:
   build-and-test:
